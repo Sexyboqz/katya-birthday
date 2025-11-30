@@ -18,8 +18,9 @@
             --light: #f8f9fa;
             --text: #2d3436;
             --success: #55efc4;
-            --sicily-gold: #ffd700;
-            --sicily-blue: #0077be;
+            --krasnodar-gold: #ffd700;
+            --krasnodar-red: #d40000;
+            --krasnodar-green: #2e8b57;
         }
 
         * {
@@ -48,10 +49,10 @@
             position: relative;
             z-index: 10;
             backdrop-filter: blur(15px);
-            border: 3px solid var(--sicily-gold);
+            border: 3px solid var(--krasnodar-gold);
         }
 
-        .sicily-theme {
+        .krasnodar-theme {
             position: absolute;
             top: 0;
             left: 0;
@@ -59,13 +60,13 @@
             height: 100%;
             background: 
                 radial-gradient(circle at 20% 80%, rgba(255,215,0,0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(0,119,190,0.1) 0%, transparent 50%);
+                radial-gradient(circle at 80% 20%, rgba(212,0,0,0.1) 0%, transparent 50%);
             pointer-events: none;
             z-index: 1;
         }
 
         header {
-            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--krasnodar-gold));
             color: white;
             text-align: center;
             padding: 70px 20px;
@@ -115,7 +116,7 @@
         }
 
         .location-badge {
-            background: linear-gradient(45deg, var(--sicily-gold), var(--sicily-blue));
+            background: linear-gradient(45deg, var(--krasnodar-gold), var(--krasnodar-red));
             color: white;
             padding: 12px 25px;
             border-radius: 25px;
@@ -172,7 +173,7 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
-            border: 2px solid var(--sicily-gold);
+            border: 2px solid var(--krasnodar-gold);
         }
 
         .countdown-item:hover {
@@ -245,7 +246,7 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(45deg, var(--primary), var(--accent), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--accent), var(--krasnodar-gold));
         }
 
         .section.visible {
@@ -256,7 +257,7 @@
         .section:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-            border-color: var(--sicily-gold);
+            border-color: var(--krasnodar-gold);
         }
 
         h2 {
@@ -269,7 +270,7 @@
             display: inline-block;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -282,7 +283,7 @@
             left: 10%;
             width: 80%;
             height: 4px;
-            background: linear-gradient(45deg, var(--primary), var(--accent), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--accent), var(--krasnodar-gold));
             border-radius: 5px;
         }
 
@@ -371,13 +372,13 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(45deg, var(--primary), var(--accent), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--accent), var(--krasnodar-gold));
         }
 
         .detail-card:hover {
             transform: translateY(-12px) scale(1.03);
             box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
-            border-color: var(--sicily-gold);
+            border-color: var(--krasnodar-gold);
         }
 
         .detail-card h3 {
@@ -392,7 +393,7 @@
             font-weight: bold;
             color: var(--primary);
             margin: 15px 0;
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -422,7 +423,7 @@
             padding: 12px 30px;
             font-size: 1em;
             margin-top: 20px;
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             color: white;
             border: none;
         }
@@ -450,7 +451,7 @@
         .food-item:hover {
             transform: translateY(-8px) scale(1.05);
             box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
-            border-color: var(--sicily-gold);
+            border-color: var(--krasnodar-gold);
         }
 
         .food-emoji {
@@ -476,7 +477,7 @@
             position: fixed;
             width: 18px;
             height: 18px;
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             animation: confetti-fall 8s linear infinite;
             z-index: 1;
             border-radius: 50%;
@@ -497,7 +498,7 @@
         }
 
         .music-btn {
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             color: white;
             border: none;
             width: 70px;
@@ -519,7 +520,7 @@
         }
 
         .music-btn.playing {
-            background: linear-gradient(45deg, var(--success), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--success), var(--krasnodar-gold));
             color: var(--dark);
             animation: pulse 1.5s infinite;
         }
@@ -551,11 +552,11 @@
         .guest-item:hover {
             transform: translateY(-8px) scale(1.05);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-            border-color: var(--sicily-gold);
+            border-color: var(--krasnodar-gold);
         }
 
         .guest-item.birthday-girl {
-            border: 3px solid var(--sicily-gold);
+            border: 3px solid var(--krasnodar-gold);
             background: linear-gradient(135deg, #fff9e6, #fff0cc);
             transform: scale(1.05);
         }
@@ -569,7 +570,7 @@
             width: 90px;
             height: 90px;
             border-radius: 50%;
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
@@ -604,7 +605,7 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 2em;
-            color: var(--sicily-gold);
+            color: var(--krasnodar-gold);
             filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));
             animation: crownGlow 2s ease-in-out infinite alternate;
         }
@@ -617,7 +618,7 @@
         footer {
             text-align: center;
             padding: 60px 30px;
-            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--krasnodar-gold));
             color: white;
             font-size: 1.4em;
             position: relative;
@@ -645,7 +646,7 @@
 
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, var(--accent), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--accent), var(--krasnodar-gold));
             color: var(--dark);
             padding: 18px 45px;
             border-radius: 50px;
@@ -718,7 +719,7 @@
 
         .progress-bar {
             height: 50px;
-            background: linear-gradient(45deg, var(--primary), var(--accent), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--accent), var(--krasnodar-gold));
             border-radius: 30px;
             width: 0%;
             transition: width 1.5s ease-in-out;
@@ -824,7 +825,7 @@
             position: fixed;
             top: 25px;
             right: 25px;
-            background: linear-gradient(45deg, var(--accent), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--accent), var(--krasnodar-gold));
             color: var(--dark);
             padding: 20px 30px;
             border-radius: 15px;
@@ -862,7 +863,7 @@
             width: 90%;
             text-align: center;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-            border: 3px solid var(--sicily-gold);
+            border: 3px solid var(--krasnodar-gold);
             background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
         }
 
@@ -870,7 +871,7 @@
             color: var(--primary);
             margin-bottom: 25px;
             font-size: 2em;
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -882,7 +883,7 @@
         }
 
         .modal-close {
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             color: white;
             border: none;
             padding: 12px 30px;
@@ -923,7 +924,7 @@
         }
 
         .step-number {
-            background: linear-gradient(45deg, var(--primary), var(--sicily-gold));
+            background: linear-gradient(45deg, var(--primary), var(--krasnodar-gold));
             color: white;
             width: 35px;
             height: 35px;
@@ -938,7 +939,7 @@
 
         /* Погода */
         .weather-widget {
-            background: linear-gradient(135deg, var(--accent3), var(--sicily-blue));
+            background: linear-gradient(135deg, var(--accent3), var(--krasnodar-green));
             color: white;
             padding: 25px;
             border-radius: 25px;
@@ -1009,19 +1010,19 @@
 
     <!-- Аудио элемент -->
     <audio id="bgMusic" loop>
-        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-pop-116.mp3" type="audio/mpeg">
+        <source src="https://s3.deliciouspeaches.com/get/cuts/ff/32/ff320bd4df2f5cb8e176c64667caf50d/77325634/KHentajj_-_KHentajj_b128f0d185.mp3" type="audio/mpeg">
     </audio>
 
     <div class="container" id="invitationCard">
-        <div class="sicily-theme"></div>
+        <div class="krasnodar-theme"></div>
         
         <header>
             <div class="floating-elements">
                 <!-- Плавающие элементы добавляются через JS -->
             </div>
             <h1>День Рождения Кати!</h1>
-            <div class="subtitle">Средиземноморская сказка на Сицилии!</div>
-            <div class="location-badge">🇮🇹 Остров Сицилия</div>
+            <div class="subtitle">Южная сказка в солнечном Краснодаре!</div>
+            <div class="location-badge">🇷🇺 Краснодар, ул. Красная, 109</div>
             <div class="date-box">Суббота, 13 декабря 2025 • Начало в 17:00</div>
             
             <!-- Таймер обратного отсчета -->
@@ -1087,8 +1088,8 @@
                         <div class="map-container">
                             <div class="map-placeholder">
                                 <span class="emoji">🗺️</span>
-                                <p>Сицилия, ул. Красная, 109</p>
-                                <p>Вила "Средиземноморская"</p>
+                                <p>Краснодар, ул. Красная, 109</p>
+                                <p>Ресторан "Сицилия"</p>
                                 <button class="cta-button small" id="showMapBtn">Показать на карте</button>
                             </div>
                         </div>
@@ -1098,9 +1099,9 @@
                 <!-- Виджет погоды -->
                 <div class="weather-widget" id="weatherWidget">
                     <div class="weather-icon">☀️</div>
-                    <div class="weather-temp">+18°C</div>
-                    <div class="weather-desc">Мягкая солнечная погода</div>
-                    <div>13 декабря 2025 • Сицилия</div>
+                    <div class="weather-temp">+8°C</div>
+                    <div class="weather-desc">Мягкая зимняя погода</div>
+                    <div>13 декабря 2025 • Краснодар</div>
                 </div>
             </div>
 
@@ -1149,7 +1150,7 @@
                     </div>
                     <div class="food-item">
                         <span class="food-emoji">🍷</span>
-                        <h3>Сицилийское вино</h3>
+                        <h3>Итальянское вино</h3>
                         <p>Отборные сорта</p>
                     </div>
                 </div>
@@ -1165,7 +1166,7 @@
         </div>
         
         <footer>
-            <p>Ждём вас на празднике на солнечной Сицилии! Приходите с хорошим настроением! 💖</p>
+            <p>Ждём вас на празднике в солнечном Краснодаре! Приходите с хорошим настроением! 💖</p>
             <p>Подтвердите своё присутствие до 10 декабря</p>
             <div class="button-group">
                 <button class="cta-button" id="confirmButton">Я приду!</button>
@@ -1207,7 +1208,7 @@
         // Создаем плавающие элементы в шапке
         function createFloatingElements() {
             const container = document.querySelector('.floating-elements');
-            const emojis = ['🎉', '🎂', '🥳', '🎈', '🎁', '✨', '❤️', '🥂', '👑', '🇮🇹', '🌴', '🍋'];
+            const emojis = ['🎉', '🎂', '🥳', '🎈', '🎁', '✨', '❤️', '🥂', '👑', '🇷🇺', '🌻', '🍇'];
             
             for (let i = 0; i < 15; i++) {
                 const element = document.createElement('div');
@@ -1306,9 +1307,9 @@
         // Карта
         function setupMap() {
             document.getElementById('showMapBtn').addEventListener('click', function() {
-                showNotification('Открываем карту Сицилии... 🗺️');
+                showNotification('Открываем карту Краснодара... 🗺️');
                 setTimeout(() => {
-                    window.open('https://yandex.ru/maps/10444/sicily/?text=Сицилия, ул. Красная, 109', '_blank');
+                    window.open('https://yandex.ru/maps/35/krasnodar/?text=Краснодар, ул. Красная, 109', '_blank');
                 }, 1000);
             });
         }
@@ -1358,7 +1359,7 @@
                 
                 const link = document.createElement("a");
                 link.href = image;
-                link.download = "День_Рождения_Кати_Сицилия.png";
+                link.download = "День_Рождения_Кати_Краснодар.png";
                 
                 document.body.appendChild(link);
                 link.click();
@@ -1375,8 +1376,8 @@
         function shareInvitation() {
             if (navigator.share) {
                 navigator.share({
-                    title: 'День Рождения Кати на Сицилии!',
-                    text: 'Приглашаю на мой день рождения на Сицилии! 13 декабря 2025',
+                    title: 'День Рождения Кати в Краснодаре!',
+                    text: 'Приглашаю на мой день рождения в Краснодаре! 13 декабря 2025',
                     url: window.location.href
                 })
                 .then(() => showNotification('Спасибо за распространение! 🎉'))
@@ -1413,7 +1414,7 @@
         function handleConfirmButton() {
             const name = prompt("Как к вам обращаться?");
             if (name && name.trim() !== "") {
-                showNotification(`Спасибо, ${name}! Ждём вас на Сицилии! 🎉`);
+                showNotification(`Спасибо, ${name}! Ждём вас в Краснодаре! 🎉`);
                 
                 const confirmBtn = document.getElementById('confirmButton');
                 confirmBtn.textContent = `✅ ${name}, ждём вас!`;
